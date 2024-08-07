@@ -9,7 +9,7 @@ pipeline {
             steps {
                 script {
                     // Run tests, capture the exit status, but don't stop the pipeline
-                    def testStatus = sh(script: 'pytest --cov=my_app --cov-report=html test/', returnStatus: true)
+                    def testStatus = sh(script: 'pytest --cov=app --cov-report=html test/', returnStatus: true)
                     // Generate the coverage report regardless of the test results
 
                     // If tests failed, generate a report for only failed tests
