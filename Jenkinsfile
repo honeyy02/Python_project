@@ -1,5 +1,8 @@
 pipeline{
     agent any
+    environment{
+        PATH = "/var/lib/jenkins./local/bin:${PATH}"
+    }
     stages{
         stage("Install dependecies"){
             steps{
