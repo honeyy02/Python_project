@@ -1,4 +1,4 @@
-from app import add,sub
+from app.app import add,sub
 
 def test_add():
     assert add(2,5)==7
